@@ -4,7 +4,6 @@
     
     <groupId>com.boxfuse.sample</groupId>
     <artifactId>devops-app</artifactId>
-    //<packaging>war</packaging>
     <version>1.0-SNAPSHOT</version>
     <name>devops-app</name>
     <url>https://github.com/rohan-bhugra/boxfuse/boxfuse-sample-java-war-hello</url>
@@ -69,17 +68,17 @@
       </pluginManagement>
     </build>
 
-<profiles>
-         <profile>
-                  <id>sonar</id>
-                  <activation>
-                           <activeByDefault>true</activeByDefault>
-                  </activation>
-                  <properties>
-                           <sonar.host.url>
-                                    https://localhost:9000
-                           </sonar.host.url>
-                  </properties>
-         </profile>
-</profiles>
+         <profiles>
+                  <profile>
+                           <id>sonar</id>
+                           <activation>
+                                    <activeByDefault>true</activeByDefault>
+                           </activation>
+                           <properties>
+                                    <sonar.host.url>
+                                             https://localhost:9000
+                                    </sonar.host.url>
+                           </properties>
+                  </profile>
+         </profiles>
 </project>
